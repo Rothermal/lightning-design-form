@@ -1,0 +1,14 @@
+{
+  "name": "hostedorderdemo",
+  "version": "1.0.0",
+  "description": "lightning design, what could go wrong",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mark rothermal",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.3.1"
+  }
+}
