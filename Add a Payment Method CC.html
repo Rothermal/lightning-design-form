@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="salesforce-lightning-design-system.min.css">
+</head>
+<body>
+<div class="payment" style="width: 440px;">
+    <div class="slds-form slds-form_compound">
+        <fieldset class="slds-form-element">
+            <div class="slds-form-element__group">
+                <dl class="slds-dl_inline">
+                    <dt class="slds-dl_inline__label">Due Date:</dt>
+                    <dd class="slds-dl_inline__detail">07/14/2017</dd>
+                    <dt class="slds-dl_inline__label">Total Amount Due:</dt>
+                    <dd class="slds-dl_inline__detail">$1500.00</dd>
+                    <dt class="slds-dl_inline__label">Minimum Amount Due:</dt>
+                    <dd class="slds-dl_inline__detail">$150.00</dd>
+                </dl>
+            </div>
+        </fieldset>
+        <fieldset class="slds-form-element">
+            <legend class="slds-form-element__label slds-text-title_caps">Payment</legend>
+            <div class="slds-form-element__group">
+                <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                        <label class="slds-form-element__label" for="input-04">Payment Amount</label>
+                        <input type="text" id="input-04" class="slds-input">
+                    </div>
+                </div>
+                <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                        <label class="slds-form-element__label" for="input-05">Payment Date</label>
+                        <input type="date" id="input-05" class="slds-input">
+                    </div>
+                </div>
+                <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                        <label class="slds-form-element__label" for="input-06">Payment Method</label>
+                        <input type="text" id="input-06" class="slds-input" value="Add a bank account">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <div>
+                <img src="WNI/Assets/card-image.png" border="0" />
+            </div>
+        </div>
+    </div>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="card-number">Card Number:</label>
+        <div class="slds-form-element__control">
+            <input type="number" maxlength="16"  id="card-number" class="slds-input" placeholder="0000000000001234">
+        </div>
+
+        <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
+        <div class="slds-form-element__control">
+            <input type="text" maxlength="3" id="card-verification" class="slds-input" placeholder="000">
+        </div>
+
+        <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
+        <div class="slds-form-element__control">
+            <input type="date" id="card-expire" class="slds-input" placeholder="Enter the Expiration Date">
+        </div>
+
+
+        <fieldset class="slds-form-element slds-is-required">
+            <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
+            <div class="slds-form-element__control">
+					<span class="slds-radio">
+						<input type="radio" id="card-type-personal" name="account-type" value="on">
+						<label class="slds-radio__label" for="card-type-personal">
+                            <span class="slds-radio_faux"></span>
+                            <span class="slds-form-element__label">Personal</span>
+                        </label>
+					</span>
+					<span class="slds-radio">
+						<input type="radio" id="card-type-commercial" name="account-type" value="on">
+						<label class="slds-radio__label" for="card-type-commercial">
+                            <span class="slds-radio_faux"></span>
+                            <span class="slds-form-element__label">Commercial</span>
+                        </label>
+					</span>
+            </div>
+        </fieldset>
+
+        <label class="slds-form-element__label" for="card-name">Name on card:</label>
+        <div class="slds-form-element__control">
+            <input type="text" id="card-name" class="slds-input" placeholder="Cardholder Name">
+        </div>
+        <label class="slds-form-element__label" for="card-add1">Billing address Line one:</label>
+        <div class="slds-form-element__control">
+            <input type="text" id="card-add1" class="slds-input" placeholder="1234 street">
+        </div>
+        <label class="slds-form-element__label" for="card-add2">Billing address Line two:</label>
+        <div class="slds-form-element__control">
+            <input type="text" id="card-add2" class="slds-input" placeholder="apt # 7">
+        </div>
+        <div class="slds-form slds-form_compound">
+        <fieldset class="slds-form-element">
+        <legend class="slds-form-element__label"></legend>
+            <div class="slds-form-element__group">
+                <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_3-of-6">
+                        <label class="slds-form-element__label" for="input-01">City</label>
+                        <input type="text" id="input-01" class="slds-input">
+                    </div>
+                    <div class="slds-form-element slds-size_1-of-6">
+                        <label class="slds-form-element__label" for="input-02">State</label>
+                        <input type="text" maxlength="2" id="input-02" class="slds-input">
+                    </div>
+                    <div class="slds-form-element slds-size_2-of-6">
+                        <label class="slds-form-element__label" for="input-03">Zip</label>
+                        <input type="text" id="input-03" class="slds-input">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        </div>
+
+
+        <div class="slds-p-top_x-large"></div>
+
+        <div class="slds-button-group" role="group">
+            <button class="slds-button slds-button_neutral">Cancel</button>
+            <button class="slds-button slds-button_neutral">Clear</button>
+            <button class="slds-button slds-button_success">Verify and Continue</button>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
