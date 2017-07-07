@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add Payment Method Complete - Credit Card Account</title>
+    <title>One Time Payment Method - ACH/Bank Account</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
@@ -11,6 +11,8 @@
 </head>
 <body>
 
+
+<body>
 <div class="slds-path-coach">
     <div class="slds-grid">
         <div class="slds-tabs_path" role="application">
@@ -51,78 +53,76 @@
     </div>
 </div>
 
-<div>
-    <div>
-        <img src="credit-cards.jpg" border="0"/>
-    </div>
-</div>
+<div class="slds-form-element slds-p-top_x-large">
 
-<div class="slds-form-element">
-    <label class="slds-form-element__label" for="card-number">Card Number:</label>
-    <div class="slds-form-element__control">
-        <input type="number" maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
+    <div>
+        Please enter your banking account information in the fields below.  When completed, press "Verify and Continue" to proceed.
     </div>
-    <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
+
+    <div class="slds-p-top_x-large"></div>
+
+    <label class="slds-form-element__label" for="account-name">Name on Account:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="3" id="card-verification" class="slds-input" placeholder="000">
+        <input type="text" id="account-name" class="slds-input" placeholder="Name on your account">
     </div>
-    <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
+
+    <fieldset class="slds-form-element slds-is-required">
+        <div class="slds-form-element__control">
+					<span class="slds-radio">
+						<input type="radio" id="account-checking" name="account-options" value="on">
+						<label class="slds-radio__label" for="account-checking">
+                            <span class="slds-radio_faux"></span>
+                            <span class="slds-form-element__label">Checking</span>
+                        </label>
+					</span>
+					<span class="slds-radio">
+						<input type="radio" id="account-savings" name="account-options" value="on">
+						<label class="slds-radio__label" for="account-savings">
+                            <span class="slds-radio_faux"></span>
+                            <span class="slds-form-element__label">Savings</span>
+                        </label>
+					</span>
+        </div>
+    </fieldset>
+
+    <label class="slds-form-element__label" for="account-routing">Routing Number:</label>
+    <div class="slds-form-element__control slds-has-error">
+        <input type="text" id="account-routing" class="slds-input" placeholder="000000000">
+    </div>
+
+    <label class="slds-form-element__label" for="account-number">Account Number:</label>
     <div class="slds-form-element__control">
-        <input type="date" id="card-expire" class="slds-input" placeholder="Enter the Expiration Date">
+        <input type="text" id="account-number" class="slds-input" placeholder="Enter the account number">
     </div>
+
+    <div>
+        <img src="check-image.png" border="0" />
+    </div>
+
     <fieldset class="slds-form-element slds-is-required">
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
         <div class="slds-form-element__control">
 					<span class="slds-radio">
-						<input type="radio" id="card-type-personal" name="account-type" value="on">
-						<label class="slds-radio__label" for="card-type-personal">
+						<input type="radio" id="account-type-personal" name="account-type" value="on">
+						<label class="slds-radio__label" for="account-type-personal">
                             <span class="slds-radio_faux"></span>
                             <span class="slds-form-element__label">Personal</span>
                         </label>
 					</span>
 					<span class="slds-radio">
-						<input type="radio" id="card-type-commercial" name="account-type" value="on">
-						<label class="slds-radio__label" for="card-type-commercial">
+						<input type="radio" id="account-type-commercial" name="account-type" value="on">
+						<label class="slds-radio__label" for="account-type-commercial">
                             <span class="slds-radio_faux"></span>
                             <span class="slds-form-element__label">Commercial</span>
                         </label>
 					</span>
         </div>
     </fieldset>
-    <label class="slds-form-element__label" for="card-name">Name on Card:</label>
-    <div class="slds-form-element__control">
-        <input type="text" id="card-name" class="slds-input" placeholder="Cardholder Name">
-    </div>
-    <label class="slds-form-element__label" for="card-add1">Billing Address Line 1:</label>
-    <div class="slds-form-element__control">
-        <input type="text" id="card-add1" class="slds-input" placeholder="1234 street">
-    </div>
-    <label class="slds-form-element__label" for="card-add2">Billing Address Line 2:</label>
-    <div class="slds-form-element__control">
-        <input type="text" id="card-add2" class="slds-input" placeholder="apt # 7">
-    </div>
-    <div class="slds-form slds-form_compound">
-        <fieldset class="slds-form-element">
-            <legend class="slds-form-element__label"></legend>
-            <div class="slds-form-element__group">
-                <div class="slds-form-element__row">
-                    <div class="slds-form-element slds-size_1-of-3">
-                        <label class="slds-form-element__label" for="card-city">City</label>
-                        <input type="text" id="card-city" class="slds-input">
-                    </div>
-                    <div class="slds-form-element slds-size_1-of-3">
-                        <label class="slds-form-element__label" for="card-state">State</label>
-                        <input type="text" maxlength="2" id="card-state" class="slds-input">
-                    </div>
-                    <div class="slds-form-element slds-size_1-of-3">
-                        <label class="slds-form-element__label" for="card-zip">Zip</label>
-                        <input type="text" id="card-zip" class="slds-input">
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-    </div>
 
+    <label class="slds-form-element__label" for="account-number">Company Name:</label>
+    <div class="slds-form-element__control">
+        <input type="text" id="company-name" class="slds-input" placeholder="Company Name (if applicable)">
+    </div>
 
     <div class="slds-p-top_x-large"></div>
 
@@ -131,7 +131,9 @@
         <button class="slds-button slds-button_neutral">Clear</button>
         <button class="slds-button slds-button_success">Verify and Continue</button>
     </div>
+
 </div>
+
 
 
 </body>
