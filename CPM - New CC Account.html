@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 
@@ -60,15 +60,17 @@
 <div class="slds-form-element">
     <label class="slds-form-element__label" for="card-number">Card Number:</label>
     <div class="slds-form-element__control">
-        <input type="number" maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
+        <input type="number" required maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
     </div>
     <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="3" id="card-verification" class="slds-input" placeholder="000">
+        <input type="text" maxlength="4" required id="card-verification" class="slds-input" placeholder="000">
     </div>
+    <!--todo add CC help links here-->
     <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
     <div class="slds-form-element__control">
-        <input type="date" id="card-expire" class="slds-input" placeholder="Enter the Expiration Date">
+        <input type="number" id="card-expire" maxlength="7" required class="slds-input" placeholder="Enter the Expiration Date">
+        <p>mm(yyyy)</p>
     </div>
     <fieldset class="slds-form-element slds-is-required">
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
@@ -88,18 +90,23 @@
                         </label>
 					</span>
         </div>
+        <!--todo make company div hidden-->
     </fieldset>
+    <label class="slds-form-element__label" for="company-name">Company:</label>
+    <div class="slds-form-element__control">
+        <input type="text" maxlength="60" id="company-name" class="slds-input" placeholder="Acme 123">
+    </div>
     <label class="slds-form-element__label" for="card-name">Name on Card:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-name" class="slds-input" placeholder="Cardholder Name">
+        <input type="text" maxlength="80" required id="card-name" class="slds-input" placeholder="Cardholder Name">
     </div>
     <label class="slds-form-element__label" for="card-add1">Billing Address Line 1:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add1" class="slds-input" placeholder="1234 street">
+        <input type="text" id="card-add1" maxlength="60" required class="slds-input" placeholder="1234 street">
     </div>
     <label class="slds-form-element__label" for="card-add2">Billing Address Line 2:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add2" class="slds-input" placeholder="apt # 7">
+        <input type="text" id="card-add2" maxlength="60" class="slds-input" placeholder="apt # 7">
     </div>
     <div class="slds-form slds-form_compound">
         <fieldset class="slds-form-element">
@@ -108,15 +115,15 @@
                 <div class="slds-form-element__row">
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-city">City</label>
-                        <input type="text" id="card-city" class="slds-input">
+                        <input type="text" id="card-city" maxlength="32" required class="slds-input">
                     </div>
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-state">State</label>
-                        <input type="text" maxlength="2" id="card-state" class="slds-input">
+                        <input type="text" maxlength="2" id="card-state" required class="slds-input">
                     </div>
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-zip">Zip</label>
-                        <input type="text" id="card-zip" class="slds-input">
+                        <input type="text" id="card-zip" maxlength="12" required class="slds-input">
                     </div>
                 </div>
             </div>

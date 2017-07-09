@@ -9,6 +9,7 @@
   "author": "mark rothermal",
   "license": "ISC",
   "dependencies": {
-    "@salesforce-ux/design-system": "^2.3.1"
+    "@salesforce-ux/design-system": "^2.3.1",
+    "jquery": "^3.2.1"
   }
 }

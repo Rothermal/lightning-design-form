@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 
@@ -64,6 +64,10 @@
     </div>
 
     <div class="slds-m-top--small">
+        Card Number:  {CC masked number show last 4 digits of number}
+    </div>
+
+    <div class="slds-m-top--small">
         Card Verification ID:  {CC 3 digit number}
     </div>
 
@@ -73,6 +77,11 @@
 
     <div class="slds-m-top--small">
         Type of Account:  {Personal/Commercial}
+    </div>
+
+    <!--todo make this div hidden-->
+    <div class="slds-m-top--small">
+        Company:  {Company}
     </div>
 
     <div class="slds-m-top--small">
