@@ -44,7 +44,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Added Payment Method</span>
+                        <span class="slds-tabs_path__title">Payment Complete</span>
                     </a>
                 </li>
             </ul>
@@ -53,10 +53,36 @@
 </div>
 
 <div class="slds-form-element slds-p-top_x-large">
-
+    <div class="slds-m-top--small">
+        <h1>Payment</h1>
+    </div>
     <div>
         Please verify that the information shown below is correct.  If you need to go back and edit your information, press "Go Back", otherwise press "Continue".
     </div>
+
+    <div class="slds-m-top--small" >
+        Due Date: {due date}
+    </div>
+    <div class="slds-m-top--small">
+        Payment Amount: {payment amount}
+    </div>
+    <div class="slds-m-top--small">
+        Payment Date: {payment date}
+    </div>
+
+</div>
+
+
+<div class="slds-form-element slds-p-top_x-large">
+    <div class="slds-m-top--small">
+        <h1>Card</h1>
+    </div>
+
+    <!--todo does this message only appear if the box on the previous screen was checked? documents do not specify-->
+    <div>
+        The following payment method will be added to your saved payment methods
+    </div>
+
 
     <div class="slds-p-top_x-large"></div>
 
@@ -74,6 +100,9 @@
 
     <div class="slds-m-top--small">
         Type of Account:  {Personal/Commercial}
+    </div>
+    <div class="slds-m-top--small">
+        Company:  {Company Name}
     </div>
 
     <div class="slds-m-top--small">

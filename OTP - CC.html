@@ -44,7 +44,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Added Payment Method</span>
+                        <span class="slds-tabs_path__title">Payment Complete</span>
                     </a>
                 </li>
             </ul>
@@ -54,28 +54,56 @@
 
 <div>
     <div>
-        <img src="credit-cards.jpg" border="0"/>
+        <img src="assets/images/credit-cards.jpg" border="0"/>
     </div>
+</div>
+
+<!--todo does this text need to be here or would this be on the previous page with the TnC?-->
+<div class="debit-card-notice">
+<p>If you are using a debit card, it will be authorized within one day of the scheduled payment date.
+    When it is authorized, your checking account funds are placed on hold by your bank and released to Western National
+    Insurance Group on the scheduled payment date. Therefore, it is recommended that funds to be available in your checking
+    account one day prior to the scheduled payment date</p>
 </div>
 
 <div class="slds-form-element">
     <label class="slds-form-element__label" for="card-number">Card Number:</label>
     <div class="slds-form-element__control">
-        <input type="number" maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
+        <input type="number" maxlength="16" required id="card-number" class="slds-input" >
     </div>
     <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="3" id="card-verification" class="slds-input" placeholder="000">
+        <input type="text" maxlength="4" required id="card-verification" class="slds-input">
     </div>
+
+    <!--todo should be hidden until needed add icon above, convert images to anchors using image as background
+      todo link to open up bigger help image - or really, just replace all of this with one better image.... -->
+    <div>
+        <p>Click on the symbols below for more information</p>
+        <a>
+            <img src="assets/images/smVisa.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smMastercard.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smDiscover.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smAmEx.gif" border="0" />
+        </a>
+    </div>
+
+
     <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
     <div class="slds-form-element__control">
-        <input type="date" id="card-expire" class="slds-input" placeholder="Enter the Expiration Date">
+        <input type="text" id="card-expire" required maxlength="7" class="slds-input" placeholder="mm/yyyy">
     </div>
     <fieldset class="slds-form-element slds-is-required">
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
         <div class="slds-form-element__control">
 					<span class="slds-radio">
-						<input type="radio" id="card-type-personal" name="account-type" value="on">
+						<input type="radio" id="card-type-personal" checked name="account-type" value="on">
 						<label class="slds-radio__label" for="card-type-personal">
                             <span class="slds-radio_faux"></span>
                             <span class="slds-form-element__label">Personal</span>
@@ -90,17 +118,21 @@
 					</span>
         </div>
     </fieldset>
+    <label class="slds-form-element__label" for="company-name">Company::</label>
+    <div class="slds-form-element__control">
+        <input type="text" id="company-name" maxlength="60"  class="slds-input" placeholder="Company name if applicable">
+    </div>
     <label class="slds-form-element__label" for="card-name">Name on Card:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-name" class="slds-input" placeholder="Cardholder Name">
+        <input type="text" id="card-name" maxlength="80" required  class="slds-input" placeholder="Cardholder Name">
     </div>
     <label class="slds-form-element__label" for="card-add1">Billing Address Line 1:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add1" class="slds-input" placeholder="1234 street">
+        <input type="text" id="card-add1" maxlength="60" required class="slds-input" placeholder="1234 street">
     </div>
     <label class="slds-form-element__label" for="card-add2">Billing Address Line 2:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add2" class="slds-input" placeholder="apt # 7">
+        <input type="text" id="card-add2" maxlength="60" class="slds-input" placeholder="apt # 7">
     </div>
     <div class="slds-form slds-form_compound">
         <fieldset class="slds-form-element">
@@ -109,20 +141,33 @@
                 <div class="slds-form-element__row">
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-city">City</label>
-                        <input type="text" id="card-city" class="slds-input">
+                        <input type="text" maxlength="32" required id="card-city" class="slds-input">
                     </div>
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-state">State</label>
-                        <input type="text" maxlength="2" id="card-state" class="slds-input">
+                        <input type="text" maxlength="2" required id="card-state" class="slds-input">
                     </div>
                     <div class="slds-form-element slds-size_1-of-3">
                         <label class="slds-form-element__label" for="card-zip">Zip</label>
-                        <input type="text" id="card-zip" class="slds-input">
+                        <input type="text" maxlength="12" required id="card-zip" class="slds-input">
                     </div>
                 </div>
             </div>
         </fieldset>
     </div>
+
+    <fieldset class="slds-form-element">
+        <legend class="slds-form-element__legend slds-form-element__label"></legend>
+        <div class="slds-form-element__control">
+      <span class="slds-checkbox">
+        <input type="checkbox" name="default" id="save-payment" value="on">
+        <label class="slds-checkbox__label" for="save-payment">
+            <span class="slds-checkbox_faux"></span>
+            <span class="slds-form-element__label">Save this payment information</span>
+        </label>
+      </span>
+        </div>
+    </fieldset>
 
 
     <div class="slds-p-top_x-large"></div>
