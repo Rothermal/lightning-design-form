@@ -53,24 +53,38 @@
 
 <div>
     <div>
-        <img src="credit-cards.jpg" border="0"/>
+        <img src="assets/images/credit-cards.jpg" border="0"/>
     </div>
 </div>
 
 <div class="slds-form-element">
     <label class="slds-form-element__label" for="card-number">Card Number:</label>
     <div class="slds-form-element__control">
-        <input type="number" required maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
+        <input type="text" required maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
     </div>
     <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
     <div class="slds-form-element__control">
         <input type="text" maxlength="4" required id="card-verification" class="slds-input" placeholder="000">
     </div>
     <!--todo add CC help links here-->
+    <div>
+        <p>Click on the symbols below for more information</p>
+        <a>
+            <img src="assets/images/smVisa.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smMastercard.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smDiscover.gif" border="0" />
+        </a>
+        <a>
+            <img src="assets/images/smAmEx.gif" border="0" />
+        </a>
+    </div>
     <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
     <div class="slds-form-element__control">
-        <input type="number" id="card-expire" maxlength="7" required class="slds-input" placeholder="Enter the Expiration Date">
-        <p>mm(yyyy)</p>
+        <input type="text" id="card-expire" maxlength="7" required class="slds-input" placeholder="mm/yyyy">
     </div>
     <fieldset class="slds-form-element slds-is-required">
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
@@ -134,9 +148,9 @@
     <div class="slds-p-top_x-large"></div>
 
     <div class="slds-button-group" role="group">
-        <button class="slds-button slds-button_neutral">Cancel</button>
+        <button class="slds-button slds-button_neutral"><a href="/">Cancel</a></button>
         <button class="slds-button slds-button_neutral">Clear</button>
-        <button class="slds-button slds-button_success">Verify and Continue</button>
+        <button class="slds-button slds-button_success"><a href="/CPM%20-%20New%20CC%20Account%20-%20Verify.html">Verify and Continue</a></button>
     </div>
 </div>
 

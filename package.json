@@ -4,12 +4,14 @@
   "description": "lightning design, what could go wrong",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "mark rothermal",
   "license": "ISC",
   "dependencies": {
     "@salesforce-ux/design-system": "^2.3.1",
+    "express": "^4.15.3",
     "jquery": "^3.2.1"
   }
 }
