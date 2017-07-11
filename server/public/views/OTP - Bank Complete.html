@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>One Time Payment Method Verify - Credit Card Account</title>
+    <title>One Time Payment Method Complete - ACH/Bank Account</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-
 
 <div class="slds-path-coach">
     <div class="slds-grid">
@@ -26,18 +25,17 @@
                         <span class="slds-tabs_path__title">Provide Information</span>
                     </a>
                 </li>
-                <li class="slds-tabs_path__item slds-is-current" role="presentation">
+                <li class="slds-tabs_path__item slds-is-complete" role="presentation">
                     <a aria-selected="false" class="slds-tabs_path__link" href="javascript:void(0);" id="path-2" role="option" tabindex="-1">
 		            <span class="slds-tabs_path__stage">
 		              <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
-		              <span class="slds-assistive-text">Current Stage:</span>
 		            </span>
                         <span class="slds-tabs_path__title">Verify Information</span>
                     </a>
                 </li>
-                <li class="slds-tabs_path__item slds-is-incomplete" role="presentation">
+                <li class="slds-tabs_path__item slds-is-current" role="presentation">
                     <a aria-selected="false" class="slds-tabs_path__link" href="javascript:void(0);" id="path-3" role="option" tabindex="-1">
 		            <span class="slds-tabs_path__stage">
 		              <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
@@ -53,81 +51,30 @@
 </div>
 
 <div class="slds-form-element slds-p-top_x-large">
-    <div class="slds-m-top--small">
-        <h1>Payment</h1>
-    </div>
+
     <div>
-        Please verify that the information shown below is correct.  If you need to go back and edit your information, press "Go Back", otherwise press "Continue".
+        A payment for {payment amount} has been scheduled for {payment date} using Checking account ending in {last 4 of account}
     </div>
 
-    <div class="slds-m-top--small" >
-        Due Date: {due date}
-    </div>
-    <div class="slds-m-top--small">
-        Payment Amount: {payment amount}
-    </div>
-    <div class="slds-m-top--small">
-        Payment Date: {payment date}
-    </div>
-
-</div>
-
-
-<div class="slds-form-element slds-p-top_x-large">
-    <div class="slds-m-top--small">
-        <h1>Card</h1>
-    </div>
-
-    <!--todo does this message only appear if the box on the previous screen was checked? documents do not specify-->
     <div>
-        The following payment method will be added to your saved payment methods
+        Your reference number is { payment confirmation number }
     </div>
 
-
-    <div class="slds-p-top_x-large"></div>
-
-    <div class="slds-m-top--small">
-        Payment Method:  {Card brand} ending in {last 4 digits of card}
-    </div>
-
-    <div class="slds-m-top--small">
-        Card Verification ID:  {CC 3 digit number}
-    </div>
-
-    <div class="slds-m-top--small">
-        Expiration Date:  {CC Expiration Date}
-    </div>
-
-    <div class="slds-m-top--small">
-        Type of Account:  {Personal/Commercial}
-    </div>
-    <div class="slds-m-top--small">
-        Company:  {Company Name}
-    </div>
-
-    <div class="slds-m-top--small">
-        Name on Card:  {Name}
-    </div>
-    <div class="slds-m-top--small">
-        Billing Address 1:  {Billing Address 1}
-    </div>
-    <div class="slds-m-top--small">
-        Billing Address 2:  {Billing Address 2}
-    </div>
-    <div class="slds-m-top--small">
-        City/State/Zip:  {City}, {State} {Zip}
+    <div>
+        If you wish to modify this payment, you can do so from the <a>Payment History</a> Page
     </div>
 
     <div class="slds-p-top_x-large"></div>
 
     <div class="slds-button-group" role="group">
-        <button class="slds-button slds-button_neutral"><a href="/">Cancel</a></button>
-        <button class="slds-button slds-button_destructive"><a href="OTP%20-%20CC.html">Go Back</a></button>
-        <button class="slds-button slds-button_success"><a href="OTP%20-%20CC%20Complete.html">Continue</a></button>
+        <button class="slds-button slds-button_success"><a href="/">Close</a></button>
+    </div>
+
+    <div>
+        <a>Please print this page for your records.</a>
     </div>
 
 </div>
-
 
 
 </body>

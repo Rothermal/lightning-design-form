@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>One Time Payment Method Verify - ACH/Bank Account</title>
+    <title>One Time Payment Method Verify - Credit Card Account</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
@@ -53,15 +53,14 @@
 </div>
 
 <div class="slds-form-element slds-p-top_x-large">
-
+    <div class="slds-m-top--small">
+        <h1>Payment</h1>
+    </div>
     <div>
         Please verify that the information shown below is correct.  If you need to go back and edit your information, press "Go Back", otherwise press "Continue".
     </div>
 
-    <div class="slds-m-top--small">
-       <h1>Payment</h1>
-    </div>
-    <div class="slds-m-top--small">
+    <div class="slds-m-top--small" >
         Due Date: {due date}
     </div>
     <div class="slds-m-top--small">
@@ -72,43 +71,59 @@
     </div>
 
 </div>
+
+
 <div class="slds-form-element slds-p-top_x-large">
+    <div class="slds-m-top--small">
+        <h1>Card</h1>
+    </div>
 
+    <!--todo does this message only appear if the box on the previous screen was checked? documents do not specify-->
+    <div>
+        The following payment method will be added to your saved payment methods
+    </div>
+
+
+    <div class="slds-p-top_x-large"></div>
 
     <div class="slds-m-top--small">
-        <h1>Bank Account</h1>
+        Payment Method:  {Card brand} ending in {last 4 digits of card}
     </div>
 
     <div class="slds-m-top--small">
-        Name on Account:  {Name on Account}
+        Card Verification ID:  {CC 3 digit number}
     </div>
 
     <div class="slds-m-top--small">
-        Type of Account:  {Checking/Savings}
-    </div>
-
-    <div class="slds-m-top--small">
-        Routing Number:  {Routing Number}
-    </div>
-
-    <div class="slds-m-top--small">
-        Account Number:  {Account Number}
+        Expiration Date:  {CC Expiration Date}
     </div>
 
     <div class="slds-m-top--small">
         Type of Account:  {Personal/Commercial}
     </div>
+    <div class="slds-m-top--small">
+        Company:  {Company Name}
+    </div>
 
     <div class="slds-m-top--small">
-        Company Name:  {Company Name}
+        Name on Card:  {Name}
+    </div>
+    <div class="slds-m-top--small">
+        Billing Address 1:  {Billing Address 1}
+    </div>
+    <div class="slds-m-top--small">
+        Billing Address 2:  {Billing Address 2}
+    </div>
+    <div class="slds-m-top--small">
+        City/State/Zip:  {City}, {State} {Zip}
     </div>
 
     <div class="slds-p-top_x-large"></div>
 
     <div class="slds-button-group" role="group">
         <button class="slds-button slds-button_neutral"><a href="/">Cancel</a></button>
-        <button class="slds-button slds-button_destructive"><a href="OTP%20-%20Bank.html">Go Back</a></button>
-        <button class="slds-button slds-button_success"><a href="OTP%20-%20Bank%20Complete.html">Continue</a></button>
+        <button class="slds-button slds-button_destructive"><a href="/views/OTP%20-%20CC.html">Go Back</a></button>
+        <button class="slds-button slds-button_success"><a href="/views/OTP%20-%20CC%20Complete.html">Continue</a></button>
     </div>
 
 </div>

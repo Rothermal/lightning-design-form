@@ -7,7 +7,7 @@ var app = express();
 var port =  process.env.PORT || 1985;
 
 
-app.use(express.static('./'));
+app.use(express.static('server/public'));
 
 
 app.use('/',index);

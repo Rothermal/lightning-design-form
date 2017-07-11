@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add Payment Method Complete - Credit Card Account</title>
+    <title>One Time Payment Method Verify - ACH/Bank Account</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+
 
 <div class="slds-path-coach">
     <div class="slds-grid">
@@ -43,7 +44,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Added Payment Method</span>
+                        <span class="slds-tabs_path__title">Payment Complete</span>
                     </a>
                 </li>
             </ul>
@@ -57,55 +58,61 @@
         Please verify that the information shown below is correct.  If you need to go back and edit your information, press "Go Back", otherwise press "Continue".
     </div>
 
-    <div class="slds-p-top_x-large"></div>
+    <div class="slds-m-top--small">
+       <h1>Payment</h1>
+    </div>
+    <div class="slds-m-top--small">
+        Due Date: {due date}
+    </div>
+    <div class="slds-m-top--small">
+        Payment Amount: {payment amount}
+    </div>
+    <div class="slds-m-top--small">
+        Payment Date: {payment date}
+    </div>
+
+</div>
+<div class="slds-form-element slds-p-top_x-large">
+
 
     <div class="slds-m-top--small">
-        Payment Method:  {Card brand} ending in {last 4 digits of card}
+        <h1>Bank Account</h1>
     </div>
 
     <div class="slds-m-top--small">
-        Card Number:  {CC masked number show last 4 digits of number}
+        Name on Account:  {Name on Account}
     </div>
 
     <div class="slds-m-top--small">
-        Card Verification ID:  {CC 3 digit number}
+        Type of Account:  {Checking/Savings}
     </div>
 
     <div class="slds-m-top--small">
-        Expiration Date:  {CC Expiration Date}
+        Routing Number:  {Routing Number}
+    </div>
+
+    <div class="slds-m-top--small">
+        Account Number:  {Account Number}
     </div>
 
     <div class="slds-m-top--small">
         Type of Account:  {Personal/Commercial}
     </div>
 
-    <!--todo make this div hidden-->
     <div class="slds-m-top--small">
-        Company:  {Company}
-    </div>
-
-    <div class="slds-m-top--small">
-        Name on Card:  {Name}
-    </div>
-    <div class="slds-m-top--small">
-        Billing Address 1:  {Billing Address 1}
-    </div>
-    <div class="slds-m-top--small">
-        Billing Address 2:  {Billing Address 2}
-    </div>
-    <div class="slds-m-top--small">
-        City/State/Zip:  {City}, {State} {Zip}
+        Company Name:  {Company Name}
     </div>
 
     <div class="slds-p-top_x-large"></div>
 
     <div class="slds-button-group" role="group">
         <button class="slds-button slds-button_neutral"><a href="/">Cancel</a></button>
-        <button class="slds-button slds-button_destructive"><a href="/CPM%20-%20New%20CC%20Account.html">Go Back</a></button>
-        <button class="slds-button slds-button_success"><a href="/CPM%20-%20New%20CC%20Account%20-%20Complete.html">Continue</a></button>
+        <button class="slds-button slds-button_destructive"><a href="/views/OTP%20-%20Bank.html">Go Back</a></button>
+        <button class="slds-button slds-button_success"><a href="/views/OTP%20-%20Bank%20Complete.html">Continue</a></button>
     </div>
 
 </div>
+
 
 
 </body>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>One Time Payment Method Complete - ACH/Bank Account</title>
+    <title>Add Payment Method Complete - Credit Card Account</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="/styles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
@@ -42,7 +42,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Payment Complete</span>
+                        <span class="slds-tabs_path__title">Added Payment Method</span>
                     </a>
                 </li>
             </ul>
@@ -53,15 +53,7 @@
 <div class="slds-form-element slds-p-top_x-large">
 
     <div>
-        A payment for {payment amount} has been scheduled for {payment date} using Checking account ending in {last 4 of account}
-    </div>
-
-    <div>
-        Your reference number is { payment confirmation number }
-    </div>
-
-    <div>
-        If you wish to modify this payment, you can do so from the <a>Payment History</a> Page
+           {Payment Method} has been added successfully.  Please click "Close" at the bottom to see your new method of payment and apply it to your account.
     </div>
 
     <div class="slds-p-top_x-large"></div>
@@ -70,12 +62,7 @@
         <button class="slds-button slds-button_success"><a href="/">Close</a></button>
     </div>
 
-    <div>
-        <a>Please print this page for your records.</a>
-    </div>
-
 </div>
-
 
 </body>
 </html>
