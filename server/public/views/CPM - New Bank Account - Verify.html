@@ -14,7 +14,7 @@
 		  <div class="slds-grid">
 		    <div class="slds-tabs_path" role="application">
 		      <ul class="slds-tabs_path__nav" role="listbox" aria-orientation="horizontal">
-		        <li class="slds-tabs_path__item slds-is-complete" role="presentation">
+		        <li class="slds-tabs_path__item slds-is-incomplete" role="presentation">
 		          <a aria-selected="true" class="slds-tabs_path__link" href="javascript:void(0);" id="path-1" role="option" tabindex="0">
 		            <span class="slds-tabs_path__stage">
 		              <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
@@ -59,6 +59,10 @@
 			<div class="slds-p-top_x-large"></div>
 
 			<div class="slds-m-top--small">
+				Payment Method:  {Checking/Savings} account ending in {last 4 digits of account number}
+			</div>
+
+			<div class="slds-m-top--small">
 				Name on Account:  {Name on Account}
 			</div>
 
@@ -78,7 +82,8 @@
 				Type of Account:  {Personal/Commercial}
 			</div>
 
-			<div class="slds-m-top--small">
+			<!-- remove slds-hidden class below if type of account above is commercial-->
+			<div class="slds-m-top--small slds-hidden">
 				Company Name:  {Company Name}
 			</div>
 

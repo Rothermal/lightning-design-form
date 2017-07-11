@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-
-
-<body>
 <div class="slds-path-coach">
     <div class="slds-grid">
         <div class="slds-tabs_path" role="application">
@@ -56,14 +53,14 @@
 <div class="slds-form-element slds-p-top_x-large">
 
     <div>
-        Please enter your banking account information in the fields below.  When completed, press "Verify and Continue" to proceed.
+        Please enter your banking account information in the fields below.  When completed, press "Continue" to proceed.
     </div>
 
     <div class="slds-p-top_x-large"></div>
 
     <label class="slds-form-element__label" for="account-name">Name on Account:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="account-name" maxlength="80" required class="slds-input" placeholder="Name on your account">
+        <input type="text" id="account-name" maxlength="80" required class="slds-input input" placeholder="This is the full name as it appears on the check.">
     </div>
 
     <fieldset class="slds-form-element slds-is-required">
@@ -86,16 +83,30 @@
     </fieldset>
 
     <label class="slds-form-element__label" for="account-routing">Routing Number:</label>
-    <div class="slds-form-element__control slds-has-error">
-        <input type="text" id="account-routing" maxlength="9" required class="slds-input" placeholder="000000000">
+    <div class="slds-form-element__control slds-is-required">
+        <input  type="text" maxlength="9" required id="account-routing" class="slds-input input" placeholder="">
+				<span class="slds-icon_container slds-icon-utility-announcement" title="Information show checking/routing image">
+  					<svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info"></use>
+                    </svg>
+  					<span class="slds-assistive-text">Click to see image of Routing and checking account numbers</span>
+				</span>
     </div>
+
 
     <label class="slds-form-element__label" for="account-number">Account Number:</label>
-    <div class="slds-form-element__control">
-        <input type="text" id="account-number" maxlength="17" required class="slds-input" placeholder="Enter the account number">
+    <div class="slds-form-element__control slds-is-required ">
+        <input type="text" id="account-number" maxlength="17" required class="slds-input input" placeholder="">
+				<span class="slds-icon_container slds-icon-utility-announcement" title="Information show checking/routing image">
+					<svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info"></use>
+                    </svg>
+					<span class="slds-assistive-text">Click to see image of Routing and checking account numbers</span>
+				</span>
     </div>
 
-    <div>
+    <!--todo When clicking the info icons above, javascript should remove the slds-hidden class below-->
+    <div class="slds-hide">
         <img src="/assets/images/checkBottom.gif" border="0" />
     </div>
 
@@ -118,10 +129,11 @@
 					</span>
         </div>
     </fieldset>
-
+    <div class="slds-hidden">
     <label class="slds-form-element__label" for="company-name">Company Name:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="company-name" maxlength="60" class="slds-input" placeholder="Company Name (if applicable)">
+        <input type="text" id="company-name" maxlength="60" class="slds-input input" placeholder="">
+    </div>
     </div>
 
     <fieldset class="slds-form-element">
@@ -148,7 +160,6 @@
 
 </div>
 
-
-
 </body>
 </html>
+

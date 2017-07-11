@@ -57,17 +57,27 @@
     </div>
 </div>
 
+<div>
+    Please enter your credit card account information in the fields below.  When completed, press "Continue" to proceed.
+</div>
+
 <div class="slds-form-element">
     <label class="slds-form-element__label" for="card-number">Card Number:</label>
     <div class="slds-form-element__control">
-        <input type="text" required maxlength="16" id="card-number" class="slds-input" placeholder="">
+        <input type="text" required maxlength="16" id="card-number" class="slds-input input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="4" required id="card-verification" class="slds-input" placeholder="">
+        <input type="text" maxlength="4" required id="card-verification" class="slds-input input" placeholder="">
+        <span class="slds-icon_container slds-icon-utility-announcement" title="Information show checking/routing image">
+            <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info"></use>
+            </svg>
+            <span class="slds-assistive-text">Click to see image of Credit card verification numbers</span>
+        </span>
     </div>
-    <!--todo add CC help links here-->
-    <div>
+    <!--todo these should only show if the info icon above is pressed-->
+    <div class="slds-hide" >
         <p>Click on the symbols below for more information</p>
         <a href="/assets/images/visa.gif">
             <img src="/assets/images/smVisa.gif" border="0" />
@@ -84,7 +94,7 @@
     </div>
     <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-expire" maxlength="7" required class="slds-input" placeholder="mm/yyyy">
+        <input type="text" id="card-expire" maxlength="7" required class="slds-input input" placeholder="mm/yyyy">
     </div>
     <fieldset class="slds-form-element slds-is-required">
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
@@ -106,21 +116,23 @@
         </div>
         <!--todo make company div hidden-->
     </fieldset>
-    <label class="slds-form-element__label" for="company-name">Company:</label>
+    <div class="slds-hide">
+    <label class="slds-form-element__label" for="company-name">Company Name:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="60" id="company-name" class="slds-input" placeholder="if applicable">
+        <input type="text" maxlength="60" id="company-name" class="slds-input input" placeholder="">
+    </div>
     </div>
     <label class="slds-form-element__label" for="card-name">Name on Card:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="80" required id="card-name" class="slds-input" placeholder="">
+        <input type="text" maxlength="80" required id="card-name" class="slds-input input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-add1">Billing Address Line 1:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add1" maxlength="60" required class="slds-input" placeholder="">
+        <input type="text" id="card-add1" maxlength="60" required class="slds-input input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-add2">Billing Address Line 2:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add2" maxlength="60" class="slds-input" placeholder="">
+        <input type="text" id="card-add2" maxlength="60" class="slds-input input" placeholder="">
     </div>
     <div class="slds-form slds-form_compound">
         <fieldset class="slds-form-element">
