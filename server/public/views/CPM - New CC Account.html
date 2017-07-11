@@ -23,7 +23,7 @@
                       </svg>
 		              <span class="slds-assistive-text">Current Stage:</span>
 		            </span>
-                        <span class="slds-tabs_path__title">Provide Information</span>
+                        <span class="slds-tabs_path__title">Provide Info</span>
                     </a>
                 </li>
                 <li class="slds-tabs_path__item slds-is-incomplete" role="presentation">
@@ -33,7 +33,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Verify Information</span>
+                        <span class="slds-tabs_path__title">Verify Info</span>
                     </a>
                 </li>
                 <li class="slds-tabs_path__item slds-is-incomplete" role="presentation">
@@ -43,7 +43,7 @@
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
                       </svg>
 		            </span>
-                        <span class="slds-tabs_path__title">Added Payment Method</span>
+                        <span class="slds-tabs_path__title">Complete</span>
                     </a>
                 </li>
             </ul>
@@ -60,25 +60,25 @@
 <div class="slds-form-element">
     <label class="slds-form-element__label" for="card-number">Card Number:</label>
     <div class="slds-form-element__control">
-        <input type="text" required maxlength="16" id="card-number" class="slds-input" placeholder="0000000000001234">
+        <input type="text" required maxlength="16" id="card-number" class="slds-input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-verification">Card Verification:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="4" required id="card-verification" class="slds-input" placeholder="000">
+        <input type="text" maxlength="4" required id="card-verification" class="slds-input" placeholder="">
     </div>
     <!--todo add CC help links here-->
     <div>
         <p>Click on the symbols below for more information</p>
-        <a>
+        <a href="/assets/images/visa.gif">
             <img src="/assets/images/smVisa.gif" border="0" />
         </a>
-        <a>
+        <a href="/assets/images/mc.gif">
             <img src="/assets/images/smMastercard.gif" border="0" />
         </a>
-        <a>
+        <a href="/assets/images/discover.gif">
             <img src="/assets/images/smDiscover.gif" border="0" />
         </a>
-        <a>
+        <a href="/assets/images/amex.gif">
             <img src="/assets/images/smAmEx.gif" border="0" />
         </a>
     </div>
@@ -90,7 +90,7 @@
         <legend class="slds-form-element__legend slds-form-element__label">Type:</legend>
         <div class="slds-form-element__control">
 					<span class="slds-radio">
-						<input type="radio" id="card-type-personal" name="account-type" value="on">
+						<input type="radio" checked id="card-type-personal" name="account-type" value="on">
 						<label class="slds-radio__label" for="card-type-personal">
                             <span class="slds-radio_faux"></span>
                             <span class="slds-form-element__label">Personal</span>
@@ -108,19 +108,19 @@
     </fieldset>
     <label class="slds-form-element__label" for="company-name">Company:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="60" id="company-name" class="slds-input" placeholder="Acme 123">
+        <input type="text" maxlength="60" id="company-name" class="slds-input" placeholder="if applicable">
     </div>
     <label class="slds-form-element__label" for="card-name">Name on Card:</label>
     <div class="slds-form-element__control">
-        <input type="text" maxlength="80" required id="card-name" class="slds-input" placeholder="Cardholder Name">
+        <input type="text" maxlength="80" required id="card-name" class="slds-input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-add1">Billing Address Line 1:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add1" maxlength="60" required class="slds-input" placeholder="1234 street">
+        <input type="text" id="card-add1" maxlength="60" required class="slds-input" placeholder="">
     </div>
     <label class="slds-form-element__label" for="card-add2">Billing Address Line 2:</label>
     <div class="slds-form-element__control">
-        <input type="text" id="card-add2" maxlength="60" class="slds-input" placeholder="apt # 7">
+        <input type="text" id="card-add2" maxlength="60" class="slds-input" placeholder="">
     </div>
     <div class="slds-form slds-form_compound">
         <fieldset class="slds-form-element">
