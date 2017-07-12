@@ -1,7 +1,36 @@
 body {
     margin:10px;
-    padding:10px
+    padding:10px;
+    background-color: #ffffff;
 }
 .input{
  max-width: 500px;
+}
+div, p {
+    color: #333333;
+    font-family: Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-size: 13px;
+    font-style: normal;
+}
+h1 {
+    font-family: Georgia, Times New Roman, MS Serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #062E76;
+    margin-left: 4px;
+}
+a {
+    color: #2574a9;
+    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-size : 11px;
+    font-style : normal;
+    text-decoration : none !important;
+
+}
+.errorMessage 		{
+    color : #ff0000;
+    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-size : 12px;
+    font-style : normal;
+    font-weight : bold;
 }
