@@ -24,13 +24,12 @@ a {
     text-decoration : none !important;
 
 }
-.errorMessage 		{
-    color : #ff0000;
-    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
-    font-size : 12px;
-    font-style : normal;
-    font-weight : bold;
-}
 .input{
     max-width: 500px;
+}
+.button{
+    color: #2574a9;
+    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-size : 11px;
+    font-style : normal;
 }
