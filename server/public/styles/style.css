@@ -3,9 +3,7 @@ body {
     padding:10px;
     background-color: #ffffff;
 }
-.input{
- max-width: 500px;
-}
+
 div, p {
     color: #333333;
     font-family: Verdana, Arial, Helvetica, MS Sans-Serif;
@@ -32,4 +30,7 @@ a {
     font-size : 12px;
     font-style : normal;
     font-weight : bold;
+}
+.input{
+    max-width: 500px;
 }
