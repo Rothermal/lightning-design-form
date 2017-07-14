@@ -27,7 +27,10 @@ a {
 .input{
     max-width: 500px;
 }
-.cvc{
+.input-checking{
+    max-width: 350px;
+}
+.input-cvc{
     max-width: 150px;
 }
 .button{
