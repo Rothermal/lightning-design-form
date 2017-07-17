@@ -12,6 +12,5 @@
   "dependencies": {
     "@salesforce-ux/design-system": "^2.3.1",
     "express": "^4.15.3",
-    "jquery": "^3.2.1"
   }
 }
