@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="slds-tabs_path__item slds-is-incomplete" role="presentation">
-                    <a aria-selected="false" class="slds-tabs_path__link" href="javascript:void(0);" id="path-2" role="option" tabindex="-1">
+                    <a aria-selected="false" class="slds-tabs_path__link" href="/views/CPM%20-%20New%20CC%20Account%20-%20Verify.html" id="path-2" role="option" tabindex="-1">
 		            <span class="slds-tabs_path__stage">
 		              <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
@@ -78,19 +78,23 @@
     </div>
     <!--add remove slds-hide based on info button clicked-->
     <div class="" >
-        <p>Click on the symbols below for more information</p>
-        <a href="/assets/images/visa.gif">
-            <img src="/assets/images/smVisa.gif" border="0" />
-        </a>
-        <a href="/assets/images/mc.gif">
-            <img src="/assets/images/smMastercard.gif" border="0" />
-        </a>
-        <a href="/assets/images/discover.gif">
-            <img src="/assets/images/smDiscover.gif" border="0" />
-        </a>
-        <a href="/assets/images/amex.gif">
-            <img src="/assets/images/smAmEx.gif" border="0" />
-        </a>
+
+        <p>Your CVC number is either a 3 digit code on the back of the card after your signature (Visa, MasterCard, Discover)</p>
+        <p>Or a 4 digit code on the front of the card above the account number (American Express)</p>
+        <!--the commented out code below will be replaced by a the text above, once marketing decides what that text should be.-->
+        <!--<p>Click on the symbols below for more information</p>-->
+        <!--<a href="/assets/images/visa.gif">-->
+            <!--<img src="/assets/images/smVisa.gif" border="0" />-->
+        <!--</a>-->
+        <!--<a href="/assets/images/mc.gif">-->
+            <!--<img src="/assets/images/smMastercard.gif" border="0" />-->
+        <!--</a>-->
+        <!--<a href="/assets/images/discover.gif">-->
+            <!--<img src="/assets/images/smDiscover.gif" border="0" />-->
+        <!--</a>-->
+        <!--<a href="/assets/images/amex.gif">-->
+            <!--<img src="/assets/images/smAmEx.gif" border="0" />-->
+        <!--</a>-->
     </div>
     <label class="slds-form-element__label" for="card-expire">Expiration Date:</label>
     <div class="slds-form-element__control">
@@ -114,9 +118,8 @@
                         </label>
 					</span>
         </div>
-        <!--add/remove slds-hide based on radio button above-->
     </fieldset>
-    <div class="">
+    <div class="">  <!-- class="slds-hide" if radio above = commercial -->
     <label class="slds-form-element__label" for="company-name">Company Name:</label>
     <div class="slds-form-element__control">
         <input type="text" maxlength="60" id="company-name" class="slds-input input" placeholder="">
