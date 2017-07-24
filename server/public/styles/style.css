@@ -1,3 +1,11 @@
+@font-face {
+
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_EOT);
+    font-weight: bold;
+}
 body {
     margin:10px;
     padding:10px;
@@ -6,19 +14,19 @@ body {
 
 div, p {
     color: #333333;
-    font-family: Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-family: LocatorWeb, Verdana, Arial, Helvetica, MS Sans-Serif;
     font-size: 13px;
     font-style: normal;
 }
 h1 {
-    font-family: Georgia, Times New Roman, MS Serif;
+    font-family: LocatorWeb, Georgia, Times New Roman, MS Serif;
     font-size: 18px;
     font-weight: normal;
     color: #062E76;
 }
 a {
     color: #2574a9;
-    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-family : LocatorWeb, Verdana, Arial, Helvetica, MS Sans-Serif;
     font-size : 11px;
     font-style : normal;
     text-decoration : none !important;
