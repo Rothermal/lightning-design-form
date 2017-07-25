@@ -1,11 +1,77 @@
 @font-face {
-
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebRegular.woff);
+    font-weight:normal;
 }
 @font-face {
     font-family: LocatorWeb;
-    src: url(/assets/font/LocatorWeb_WOFF);
-    /*font-weight: bold;*/
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBold.woff);
+    font-weight: bold;
 }
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBoldItalic.woff);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebRegularItalic.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebLightItalic.woff);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebLight.woff);
+    font-weight: 300;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebRegularItalic.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBlack.woff);
+    font-weight: 900;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBlackItalic.woff);
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebUltraLight.woff);
+    font-weight: 200;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebUltraLightItalic.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebMedium.woff);
+    font-weight: 500;
+}
+@font-face {
+    font-family: LocatorWeb;
+    src: url(/assets/font/LocatorWeb_WOFF/LocatorWebMedium.woff);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
 body {
     margin:10px;
     padding:10px;
@@ -46,4 +112,7 @@ a {
     font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
     font-size : 11px;
     font-style : normal;
+}
+.float-right{
+    float: right;
 }
