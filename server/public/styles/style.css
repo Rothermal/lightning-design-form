@@ -3,8 +3,8 @@
 }
 @font-face {
     font-family: LocatorWeb;
-    src: url(/assets/font/LocatorWeb_EOT);
-    font-weight: bold;
+    src: url(/assets/font/LocatorWeb_WOFF);
+    /*font-weight: bold;*/
 }
 body {
     margin:10px;
