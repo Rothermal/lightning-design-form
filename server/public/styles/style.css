@@ -2,11 +2,13 @@
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebRegular.woff);
     font-weight:normal;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBold.woff);
     font-weight: bold;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
@@ -30,6 +32,7 @@
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebLight.woff);
     font-weight: 300;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
@@ -41,6 +44,7 @@
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebBlack.woff);
     font-weight: 900;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
@@ -52,6 +56,7 @@
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebUltraLight.woff);
     font-weight: 200;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
@@ -63,6 +68,7 @@
     font-family: LocatorWeb;
     src: url(/assets/font/LocatorWeb_WOFF/LocatorWebMedium.woff);
     font-weight: 500;
+    font-style: normal;
 }
 @font-face {
     font-family: LocatorWeb;
@@ -109,7 +115,7 @@ a {
 }
 .button{
     color: #2574a9;
-    font-family :Verdana, Arial, Helvetica, MS Sans-Serif;
+    font-family :LocatorWeb, Verdana, Arial, Helvetica, MS Sans-Serif;
     font-size : 11px;
     font-style : normal;
 }
